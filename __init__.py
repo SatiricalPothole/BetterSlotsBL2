@@ -8,7 +8,7 @@ class BetterSlots(ModMenu.SDKMod):
     Version: str = "1.0.0"
     SupportedGames: ModMenu.Game = ModMenu.Game.BL2
     Types: ModMenu.ModTypes = ModMenu.ModTypes.Utility
-    SaveEnabledState: EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
+    SaveEnabledState: ModMenu.EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
 
 def Enable(self) -> None:
     super().Enable()
