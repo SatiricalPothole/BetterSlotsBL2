@@ -11,12 +11,11 @@ class BetterSlots(ModMenu.SDKMod):
     SaveEnabledState: EnabledSaveType = ModMenu.EnabledSaveType.LoadWithSettings
 
 def Enable(self) -> None:
-        super().Enable()
-        unrealsdk.Log("I ARISE!")
+    super().Enable()
+    unrealsdk.Log("I ARISE!")
 
 def Disable(self) -> None:  # noqa: N802
-        super().Disable()
-        dash.disable()
-        glory_kill.disable()
+    unrealsdk.Log("I FALL!")
+    super().Disable()
    
 ModMenu.RegisterMod(BetterSlots())
